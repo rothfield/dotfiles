@@ -1,0 +1,7 @@
+[user]
+	email = johnrothfield@gmail.com
+	name = John Rothfield
+[core]
+	excludesfile = /home/john/.gitignore
+[init]
+	defaultBranch = main

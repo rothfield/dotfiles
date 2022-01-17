@@ -1,0 +1,3 @@
+ pacman -S git  zsh git i3blocks libreoffice-fresh git docker docker-compose xfce4-terminal ttf-ubuntu-font-family pavucontrol  tree neovim nmap rclone keychain firefox mate-calc solaar network-manager-applet sudo atril qbittorrent sudo cheese gnome-disk-utility gparted slock inetutils sqlite eog cups  jre-openjdk net-tools arandr jwm i3 
+
+

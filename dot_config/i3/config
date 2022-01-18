@@ -8,12 +8,12 @@
 # i3 config file (v4)
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
-exec_always --no-startup-id ~/.screenlayout/home2monitors.sh
-#exec_always --no-startup-id ~/.screenlayout/asus2monitors.sh
+exec_always --no-startup-id ~/.screenlayout/home_2_external_monitors.sh
 #exec_always --no-startup-id ~/.screenlayout/hdmi_and_laptop.sh
+#exec_always --no-startup-id ~/.screenlayout/asus2monitors.sh
 exec_always --no-startup-id xsetroot -solid grey 
-exec_always --no-startup-id xpad -h
-exec_always --no-startup-id blueman-applet -h
+#exec_always --no-startup-id xpad -h
+#exec_always --no-startup-id blueman-applet -h
 
 set $mod Mod4
 

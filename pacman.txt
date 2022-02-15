@@ -1,6 +1,27 @@
-sudo pacman -S git  zsh git i3-gaps i3blocks libreoffice-fresh git docker docker-compose xfce4-terminal ttf-ubuntu-font-family pavucontrol  tree neovim nmap rclone keychain firefox mate-calc solaar network-manager-applet sudo atril qbittorrent sudo cheese gnome-disk-utility gparted slock inetutils sqlite eog cups  jre-openjdk arandr jwm  rofi go thunar pulseaudio b43-fwcutter chromium openssh vi claws-mail xpad xorg-xsetroot scrot mpv fuseiso nota iproute2 hplip hexchat github-cli fish vlc chezmoi
+sudo pacman -S git  zsh git i3-gaps i3blocks libreoffice-fresh git docker docker-compose xfce4-terminal ttf-ubuntu-font-family pavucontrol  tree neovim nmap rclone keychain firefox mate-calc solaar network-manager-applet sudo atril qbittorrent sudo cheese gnome-disk-utility gparted slock inetutils sqlite eog cups  jre-openjdk arandr jwm  rofi go thunar pulseaudio b43-fwcutter chromium openssh vi claws-mail xpad xorg-xsetroot scrot mpv fuseiso nota iproute2 hplip hexchat github-cli fish vlc chezmoi gnome-disk-utility links inetutils ttf-inconsolata feh
+
+# ttf-inconsolata : console font
 # scrot --> screen snapshot
 # chezmoi - Dotfile management
 # sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
 yay mirage # image viewer
+pacman -Syu fish chezmoi tree git nmap keychain links inetutils  neovim elinks sudo vi 
+pacman --noconfirm -S nodejs npm yarn git unzip
+pacman --noconfirm -S \
+    gtk2 \
+    gtk3 \
+    libnotify \
+    gconf \
+    nss \
+    xscreensaver \
+    alsa-lib \
+    libxtst \
+    libxss \
+    xorg-xauth \
+    xorg-server-xvfb
+
+npm i -g yarn@latest npm@latest
+pacman --noconfirm -S firefox
+npm config -g set user $(whoami)
+id

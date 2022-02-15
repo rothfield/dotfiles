@@ -4,7 +4,7 @@
     <!-- The root menu. -->
     <RootMenu onroot="12">
   <Include>exec: xdgmenumaker -n -i -f jwm</Include>  
-        <Program icon="utilities-terminal" label="Terminal">alacritty</Program>
+        <Program icon="uilities-terminal" label="Terminal">alacritty</Program>
         <Menu icon="folder" label="Applications">
             <Program icon="sound" label="Audacious">audacious</Program>
             <Program icon="calc" label="Calculator">xcalc</Program>
@@ -171,6 +171,7 @@
 
     <!-- Key bindings -->
     <Key mask="4" key="Return">exec:alacritty</Key>
+    <!-- Like i3 dmenu -->
     <Key mask="4" key="D">
         exec:rofi -modi drun,run -show drun -font 'pango:monospace 24'
     </Key>

@@ -8,9 +8,9 @@
 # i3 config file (v4)
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
-exec_always --no-startup-id ~/.screenlayout/home_2_external_monitors.sh
+#exec_always --no-startup-id ~/.screenlayout/home_2_external_monitors.sh
 #exec_always --no-startup-id ~/.screenlayout/hdmi_and_laptop.sh
-#exec_always --no-startup-id ~/.screenlayout/asus2monitors.sh
+exec_always --no-startup-id ~/.screenlayout/asus2monitors.sh
 exec_always --no-startup-id xsetroot -solid grey 
 #exec_always --no-startup-id xpad -h
 #exec_always --no-startup-id blueman-applet -h
@@ -52,7 +52,9 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal --working-directory='`cat /tmp/whereami`'
+#bindsym $mod+Return exec i3-sensible-terminal --working-directory='`cat /tmp/whereami`'
+bindsym $mod+Return exec alacritty 
+#--working-directory='`cat /tmp/whereami`'
 # kill focused window
 bindsym $mod+Shift+q kill
 
@@ -76,10 +78,10 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down 
+bindsym $mod+Shift+k move up 
+bindsym $mod+Shift+l move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -160,7 +162,7 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exit
 # alt-shift-e
 bindsym Mod1+Shift+e exit
-bindsym ControlL+Shift+e exit
+bindsym Control+Shift+e exit
 
 
 # resize window (you can also use the mouse for that)
@@ -209,7 +211,4 @@ bar {
 }
 bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
-# for fish shell
-bind Y fish_clipboard_copy
-bind p fish_clipboard_paste
 
